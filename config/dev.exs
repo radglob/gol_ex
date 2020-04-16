@@ -51,7 +51,8 @@ config :gol_ex, GolExWeb.Endpoint,
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/gol_ex_web/(live|views)/.*(ex)$",
+      ~r"lib/gol_ex_web/views/.*(ex)$",
+      ~r"lib/gol_ex_web/live/.*(ex)%",
       ~r"lib/gol_ex_web/templates/.*(eex)$"
     ]
   ]

@@ -23,8 +23,8 @@ defmodule GolExWeb do
 
       import Plug.Conn
       import GolExWeb.Gettext
+      import Phoenix.LiveView.Controller, only: [live_render: 3]
       alias GolExWeb.Router.Helpers, as: Routes
-      import Phoenix.LiveView.Controller
     end
   end
 
@@ -43,6 +43,7 @@ defmodule GolExWeb do
       import GolExWeb.ErrorHelpers
       import GolExWeb.Gettext
       alias GolExWeb.Router.Helpers, as: Routes
+
       import Phoenix.LiveView.Helpers
     end
   end
@@ -52,7 +53,6 @@ defmodule GolExWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
-      import Phoenix.LiveView.Router
     end
   end
 
